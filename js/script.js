@@ -77,11 +77,14 @@ shirtDesign.addEventListener('change', e => {
 
         if (choosenShirt == selection) {
             colorSelected[i].hidden = false;
-            colorSelected[i].setAttribute('selected', true);
+            //colorSelected[i].setAttribute('selected', true);
+            colorSelected[i].selected = true;
 
         } else {
             colorSelected[i].hidden = true;
-            colorSelected[i].setAttribute('selected', false);
+            //colorSelected[i].setAttribute('selected', false);
+            colorSelected[i].selected = false;
+
         }
     }
 })
